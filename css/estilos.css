@@ -2,14 +2,14 @@ header {
 	position: relative;
 }
 
-* /******************BODY*************************/ 
+/******************BODY*************************/ 
 
 body {
 	color: #333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-* /******************MENU OPÇÕES***************/ 
+/******************MENU OPÃ‡Ã•ES***************/ 
 
 .menu-opcoes ul li {
 	display: inline;
@@ -30,7 +30,7 @@ body {
 	color: #867DC6;
 }
 
-* /******************SACOLA***************/ 
+/******************SACOLA***************/ 
 
 .sacola {
 	background-image: url(../img/sacola.png);
@@ -45,14 +45,14 @@ body {
 	right: 0;
 }
 
-* /******************CONTAINER***********************/ 
+/******************CONTAINER***********************/ 
 
 .container {
 	margin: 0 auto;
 	width: 940px;
 }
 
-* /***********************MENU DEPARTAMENTOS***************/ 
+/***********************MENU DEPARTAMENTOS***************/ 
 
 .menu-departamentos li {
 	background-color: white;
@@ -88,7 +88,7 @@ body {
 	padding-right: 3px;
 }
 
-* /******************BUSCA************************/ 
+/******************BUSCA************************/ 
 
 .busca button {
 	/* adicionando imagem */
@@ -127,13 +127,13 @@ body {
 	float: left;
 }
 
-* /******************DESTAQUE************************/ 
+/******************DESTAQUE************************/ 
 
 .destaque {
 	margin-top: 10px;
 }
 
-* /******************PAINEIS***************/ 
+/******************PAINEIS***************/ 
 
 .painel {
 	margin: 10px 0;
@@ -188,7 +188,7 @@ body {
 	transform: scale(1.2) rotate(5deg);
 }
 
-* /******************NOVIDADES***************/ 
+/******************NOVIDADES***************/ 
 
 .novidades {
 	background-color: #F5DCDC;
@@ -196,7 +196,7 @@ body {
 	float: left;
 }
 
-* /******************MAIS VENDIDOS***************/ 
+/******************MAIS VENDIDOS***************/ 
 
 .mais-vendidos {
 	background-color: #DCDCF5;
@@ -204,7 +204,7 @@ body {
 	float: right;
 }
 
-* /******************REDES SOCIAIS***************/ 
+/******************REDES SOCIAIS***************/ 
 .social a {
 	/* tamanho da imagem */
 	height: 32px;
@@ -237,7 +237,7 @@ body {
 	margin-left: 25px;
 }
 
-* /*************** RODAPÉ******************* */ 
+/*************** RODAPÃ‰******************* */ 
 
 footer {
 	background-image: url(../img/fundo-rodape.png);
@@ -249,7 +249,7 @@ footer .container {
 	position: relative;
 }
 
-* /***************MEDIA******************* */
+/***************MEDIA******************* */
 
 
 
