@@ -174,5 +174,14 @@ label[for=azul]::after {
  .cores label::after {
      margin-right: 10px;
  }
+ 
+  fieldset {
+         display: inline-block;
+         vertical-align: top;
+
+         margin: 1em 0;
+         min-width: 240px;
+         width: 45%;
+     }
 
  } 
