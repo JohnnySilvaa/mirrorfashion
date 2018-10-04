@@ -213,6 +213,7 @@ body {
 
 .social a[href*="facebook.com"] {
 	background-image: url(../img/facebook.png);
+	class="img-fluid"
 }
 
 .social a[href*="twitter.com"] {
@@ -223,11 +224,13 @@ body {
 	background-image: url(../img/googleplus.png);
 }
 
-.social {
+/* .social {
 	position: absolute;
 	top: 30%;
 	right: 5%;
-}
+} */
+
+
 
 .social li {
 	float: left;

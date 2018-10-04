@@ -1,3 +1,21 @@
- .form-control:invalid {
-     border: 1px solid #CC0000;
- }
+.form-control:invalid {
+	border: 1px solid #CC0000;
+}
+
+/* 
+body {
+	padding-top: 55px;
+} */
+
+
+.a{cursor: pointer;}
+
+
+	
+	@media screen and (min-width: 480px) {
+		.a{cursor: pointer;}
+	}
+	@media screen and(min-width: 720px) {
+		.a{cursor: pointer;}
+
+	}
