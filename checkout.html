@@ -16,66 +16,92 @@
 
 
 	<!------------------------- NAVBAR ----------------------------------->
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
-				<button class="navbar-toggler ml-auto" type="button"
-					data-toggle="collapse" data-target="#navbarToggleExternalContent">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand pointer" href="index.html">Mirror Fashion</a>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+			<button class="navbar-toggler ml-auto" type="button"
+				data-toggle="collapse" data-target="#navbarToggleExternalContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand pointer" href="index.html">Mirror Fashion</a>
 
-				<div class="collapse navbar-collapse"
-					id="navbarToggleExternalContent">
-					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link"
-							href="sobre.html">Sobre</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Perguntas
-								frequentes</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Entre
-								em contato</a></li>
-					</ul>
-				</div>
-			</nav>
+			<div class="collapse navbar-collapse"
+				id="navbarToggleExternalContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link"
+						href="sobre.html">Sobre</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Perguntas
+							frequentes</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Entre em
+							contato</a></li>
+				</ul>
+			</div>
+		</nav>
 
-		</header>
+	</header>
 
-	<div class="jumbotron jumbotron-fluid ">
-		<div class="container">
-			<h1>Ótima escolha!</h1>
-			<p>Obrigado por comprar na Mirror Fashion! Preencha seus dados
-				para efetivar a compra.</p>
 
-		</div>
-	</div>
-
-	<!------------------------------ FIM_NAVBAR---------------------- -->
-
-	<!---------------------- CARD----------------------- -->
 	<div class="container">
-		<div class="card mb-3">
-			<div class="card-header">Sua compra</div>
+		<div class="jumbotron jumbotron-fluid ">
+			<div class="container">
+				<h1>Ótima escolha!</h1>
+				<p>Obrigado por comprar na Mirror Fashion! Preencha seus dados
+					para efetivar a compra.</p>
+
+			</div>
 		</div>
 
+		<!------------------------------ FIM_NAVBAR---------------------- -->
 
-		<div class="card-body">
-			<img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"
-				class="img-thumbnail mb-3" class="d-none  d-sm-block">
-			<dl>
+		<!---------------------- CARD----------------------- -->
+		<div class="col-md-4">
+			<div class="card mb-3">
+				<div class="card-header">Sua compra</div>
+				<!-- fim .card-header -->
 
-				<dt>Produto</dt>
-				<dd>Fuzzy Cardigan</dd>
+				<div class="card-body">
+					<img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"
+						class="img-thumbnail mb-3">
 
-				<dt>Cor</dt>
-				<dd>Verde</dd>
+					<dl>
+						<dt>Produto</dt>
+						<dd>Fuzzy Cardigan</dd>
 
-				<dt>Tamanho</dt>
-				<dd>40</dd>
+						<dt>Cor</dt>
+						<dd>Verde</dd>
 
-				<dt>Preço</dt>
-				<dd>R$ 129,90</dd>
-			</dl>
+						<dt>Tamanho</dt>
+						<dd>40</dd>
+
+						<dt>Preço</dt>
+						<dd id="preco">R$ 129,90</dd>
+					</dl>
+				</div>
+				<!-- fim .card-body -->
+			</div>
+			<!-- fim .card mb-3 -->
+
+
+
+			<div class="card mb-3">
+				<div class="card-body">
+
+					<div class="form-group">
+						<label for="qtd">Quantidade:</label> <input type="number" id="qtd"
+							min="1" max="99" value="1" class="form-control">							
+					</div>
+
+					<div class="form-group">
+						<label for="total">Total:</label>
+						<output id="total" class="form-control">R$ 129,90</output>
+					</div>
+
+				</div>
+			</div>
+
+
 		</div>
+		<!-- fim .col-md-4 -->
 
 		<!-------------------------FIM_CARD---------------------- -->
 
@@ -160,10 +186,12 @@
 					Pedido</button>
 			</div>
 		</form>
+		<!------------------------------------------ FIM_FORM ------------------------------- -->
+
 	</div>
-	<!------------------------------------------ FIM_FORM ------------------------------- -->
-
-
+	
+	 <script type="text/javascript" src="js/total.js"></script>
+	
 </body>
 
 <script type="text/javascript" src="js/jquery.js"></script>
