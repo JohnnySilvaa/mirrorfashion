@@ -2,14 +2,12 @@ header {
 	position: relative;
 }
 
-/******************BODY*************************/ 
-
+/******************BODY*************************/
 body {
 	color: #333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-/******************MENU OPÇÕES***************/ 
-
+/******************MENU OPÇÕES***************/
 .menu-opcoes ul li {
 	display: inline;
 	margin-left: 20px;
@@ -29,8 +27,7 @@ body {
 	color: #867DC6;
 }
 
-/******************SACOLA***************/ 
-
+/******************SACOLA***************/
 .sacola {
 	background-image: url(../img/sacola.png);
 	background-repeat: no-repeat;
@@ -44,14 +41,12 @@ body {
 	right: 0;
 }
 
-/******************CONTAINER***********************/ 
-
+/******************CONTAINER***********************/
 .container {
 	margin: 0 auto;
 	width: 940px;
 }
- /***********************MENU DEPARTAMENTOS***************/ 
-
+/***********************MENU DEPARTAMENTOS***************/
 .menu-departamentos li {
 	background-color: white;
 	margin-bottom: 1px;
@@ -86,8 +81,7 @@ body {
 	padding-right: 3px;
 }
 
-/******************BUSCA************************/ 
-
+/******************BUSCA************************/
 .busca button {
 	/* adicionando imagem */
 	background-image: url(../img/busca.png);
@@ -125,14 +119,12 @@ body {
 	float: left;
 }
 
-/******************DESTAQUE************************/ 
-
+/******************DESTAQUE************************/
 .destaque {
 	margin-top: 10px;
 }
 
- /******************PAINEIS***************/ 
-
+/******************PAINEIS***************/
 .painel {
 	margin: 10px 0;
 	padding: 10px;
@@ -185,23 +177,21 @@ body {
 .painel li:nth-child(2n):hover {
 	transform: scale(1.2) rotate(5deg);
 }
- /******************NOVIDADES***************/ 
-
+/******************NOVIDADES***************/
 .novidades {
 	background-color: #F5DCDC;
 	background: linear-gradient(#F5DCDC, #BEBEF4);
 	float: left;
 }
 
-/******************MAIS VENDIDOS***************/ 
-
+/******************MAIS VENDIDOS***************/
 .mais-vendidos {
 	background-color: #DCDCF5;
 	background: linear-gradient(#DCDCF5, #F4BEBE);
 	float: right;
 }
 
- /******************REDES SOCIAIS***************/ 
+/******************REDES SOCIAIS***************/
 .social a {
 	/* tamanho da imagem */
 	height: 32px;
@@ -213,7 +203,8 @@ body {
 
 .social a[href*="facebook.com"] {
 	background-image: url(../img/facebook.png);
-	class="img-fluid"
+	class
+	="img-fluid"
 }
 
 .social a[href*="twitter.com"] {
@@ -230,14 +221,11 @@ body {
 	right: 5%;
 }
 
-
-
 .social li {
 	float: left;
 	margin-left: 25px;
 }
- /*************** RODAPÉ******************* */ 
-
+/*************** RODAPÉ******************* */
 footer {
 	background-image: url(../img/fundo-rodape.png);
 	clear: both;
@@ -249,9 +237,6 @@ footer .container {
 }
 
 /***************MEDIA******************* */
-
-
-
 @media screen and (max-width: 939px) {
 	.container {
 		width: 96%;
@@ -322,4 +307,67 @@ footer .container {
 			width: 69%;
 		}
 	}
+}
+
+.painel li:nth-child(n + 7) {
+	display: none;
+}
+
+.painel-aberto li:nth-child(n + 7) {
+		
+	display: inline-block;
+}
+
+.painel button {
+	/* posicionamento */
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+	/* estilo */
+	background-color: #333;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px black;
+	/* animação */
+	transition: 0.3s;
+	cursor: pointer; 
+	
+}
+
+.painel button:hover {
+	background-color: #393939;
+	box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
+}
+
+.painel button {
+	/* posicionamento */
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.painel button::after {
+	/* elemento vazio */
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+	/* triângulo */
+	border-top: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	/* posicionamento */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	/* animação */
+	transition: 0.3s;
+}
+
+.painel button:hover::after {
+	border-top-color: #393939;
 }

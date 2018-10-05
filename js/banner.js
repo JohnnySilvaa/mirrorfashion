@@ -10,14 +10,6 @@ var timer = setInterval(trocaBanner, 4000);
 var controle = document.querySelector('.pause');
 
 
-//function pararBanner(){
-////	clearInterval(timer);
-//	
-//}
-//
-//function iniciarBanner(){
-////	setInterval(trocaBanner, 4000);
-//}
 
 controle.onclick = function() {
     if (controle.className == 'pause') {
