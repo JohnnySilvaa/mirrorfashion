@@ -29,7 +29,7 @@ body {
 
 /******************SACOLA***************/
 .sacola {
-	background-image: url(../img/sacola.png);
+	background-image: url(../img/sacola.jpg);
 	background-repeat: no-repeat;
 	background-position: top right;
 	font-size: 14px;
@@ -84,7 +84,7 @@ body {
 /******************BUSCA************************/
 .busca button {
 	/* adicionando imagem */
-	background-image: url(../img/busca.png);
+	background-image: url(../img/busca.jpg);
 	background-repeat: no-repeat;
 	border: none;
 	/* tamanho da imagem */
@@ -202,17 +202,17 @@ body {
 }
 
 .social a[href*="facebook.com"] {
-	background-image: url(../img/facebook.png);
+	background-image: url(../img/facebook.jpg);
 	class
 	="img-fluid"
 }
 
 .social a[href*="twitter.com"] {
-	background-image: url(../img/twitter.png);
+	background-image: url(../img/twitter.jpg);
 }
 
 .social a[href*="plus.google.com"] {
-	background-image: url(../img/googleplus.png);
+	background-image: url(../img/googleplus.jpg);
 }
 
 .social {
@@ -227,7 +227,7 @@ body {
 }
 /*************** RODAPÉ******************* */
 footer {
-	background-image: url(../img/fundo-rodape.png);
+	background-image: url(../img/fundo-rodape.jpg);
 	clear: both;
 	padding: 20px 0;
 }
