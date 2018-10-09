@@ -88,7 +88,7 @@
 
 					<div class="form-group">
 						<label for="qtd">Quantidade:</label> <input type="number" id="qtd"
-							min="1" max="99" value="1" class="form-control">							
+							min="1" max="99" value="1" class="form-control">
 					</div>
 
 					<div class="form-group">
@@ -136,7 +136,7 @@
 					<div class="form-group">
 						<label for="cpf">CPF</label> <input type="text"
 							class="form-control" id="cpf" name="cpf"
-							placeholder="000.000.000-00"  data-mask="999.999.999-99">
+							placeholder="000.000.000-00" data-mask="999.999.999-99">
 
 					</div>
 
@@ -189,15 +189,17 @@
 		<!------------------------------------------ FIM_FORM ------------------------------- -->
 
 	</div>
-	
-	 <script type="text/javascript" src="js/total.js"></script>
-	
+
+
+	<?php include("rodape.php"); ?>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/inputmask-plugin.js"></script>
+	<script type="text/javascript" src="js/total.js"></script>
 </body>
 
-<script type="text/javascript" src="js/jquery.js"></script>
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
- <script type="text/javascript" src="js/inputmask-plugin.js"></script>
 
 </html>
 

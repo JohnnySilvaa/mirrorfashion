@@ -13,13 +13,7 @@
 
 <body>
 
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
-			<img src="img/logo.jpg" alt="Logo da Mirror Fashion">
-		</nav>
-
-	</header>
-
+	<?php include("cabecalho.php"); ?>
 
 	<div class="container">
 
@@ -29,8 +23,9 @@
 				<h1>A Mirror Fashion</h1>
 				<p>
 					A <strong>Mirror Fashion</strong> é a maior empresa comércio
-					eletrônico no segmento de moda em todo o mundo. Fundada há <?php print date("Y") - 1932; ?> anos,
-					 possui filiais em 124 países, sendo líder de mercado com mais
+					eletrônico no segmento de moda em todo o mundo. Fundada há
+					<?php print date("Y") - 1932; ?>
+					anos, possui filiais em 124 países, sendo líder de mercado com mais
 					de 90% de participação em 118 deles.
 				</p>
 
@@ -131,25 +126,7 @@
 
 
 
-	<footer>
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-8">
-					<img class="img-fluid" src="img/logo-rodape.jpg"
-						alt="Logo da Mirror Fashion">
-				</div>
-
-				<div class="col-md-4">
-					<ul class="social">
-						<li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
-						<li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
-						<li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php include("rodape.php"); ?>
 
 </body>
 </html>
