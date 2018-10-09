@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8" name="viewport" content="width=device-width">
 
-<title>Mirror Fashion</title>
+<title><?php print $cabecalho_title; ?></title>
 
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet/less" href="less/estilos.less">
-<link rel="stylesheet" href="css/banner.css">
-<link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script'
-	rel='stylesheet'>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
+<?php print @$cabecalho_css; ?>
 
 </head>
 <body>

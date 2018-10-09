@@ -14,10 +14,13 @@
 
 </head>
 <body>
-	<?php include("cabecalho.php"); ?>
-	
-	
-	
+
+	<?php
+     $cabecalho_title = "Home Mirror Fashion";
+     include("cabecalho.php");
+ ?>
+
+
 	<div class="container destaque">
 
 		<section class="busca">

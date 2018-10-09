@@ -12,8 +12,10 @@
 </head>
 
 <body>
-
-	<?php include("cabecalho.php"); ?>
+	<?php
+     $cabecalho_title = "Sobre Mirror Fashion";
+     include("cabecalho.php");
+ ?>
 
 	<div class="container">
 
