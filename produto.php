@@ -1,5 +1,5 @@
 <?php
-     $conexao = mysqli_connect("localhost", "root", "", "WD43");
+     $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
      $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
      $produto = mysqli_fetch_array($dados);
  ?>
@@ -10,6 +10,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
+
 <title><?= $produto['nome'] ?></title>
 
 <link rel="stylesheet" href="css/reset.css">
@@ -17,16 +18,14 @@
 <link rel="stylesheet" href="css/produto.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 
-
 </head>
+
 <body>
 
 	<?php
      $cabecalho_title = "Home Mirror Fashion";
      include("cabecalho.php");
  ?>
-
-
 
 	<div class="produto-back">
 		<!-- envolvendo a div.produto pela nova div.container -->
@@ -39,11 +38,9 @@
 					por apenas
 					<?= $produto['preco'] ?>
 				</p>
-				<form action="checkout.php" method="POST">
 
-					<input type="hidden" name="nome" value="<?= $produto['nome'] ?>">
-					<input type="hidden" name="preco" value="<?= $produto['preco'] ?>">
-					<input type="hidden" name="id" value="<?= $produto['id'] ?>">
+				<form action="checkout.php?id=<?= $produto['id'] ?>" method="POST">
+
 					<fieldset class="cores">
 						<legend>Escolha a cor:</legend>
 
@@ -58,7 +55,6 @@
 						</label> <input type="radio" name="cor" value="azul" id="azul"> <label
 							for="azul"> <img
 							src="img/produtos/foto<?= $produto['id'] ?>-azul.jpg">
-
 						</label>
 					</fieldset>
 

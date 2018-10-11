@@ -16,9 +16,9 @@
 <body>
 
 	<?php
-     $cabecalho_title = "Home Mirror Fashion";
-     include("cabecalho.php");
- ?>
+     	$cabecalho_title = "Home Mirror Fashion";
+     	include("cabecalho.php");
+	 ?>
 
 
 	<div class="container destaque">
@@ -78,143 +78,63 @@
 	<div class="container paineis">
 		<section class="painel novidades ">
 			<h2>Novidades</h2>
-
 			<ol>
-				<!-- primeiro produto -->
-				<li><a href="produto.html">
+				<?php
+    				 	$conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
+    					 $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 0, 12");
+     					while ($produto = mysqli_fetch_array($dados)):?>
+
+				<li><a href="produto.php?id=<?= $produto['id'] ?>">
 						<figure>
-							<img src="img/produtos/miniatura1.jpg" alt="miniatura1">
-							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do primeiro produto -->
-
-
-				<!-- segundo produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura2.jpg" alt="miniatura2">
-							<figcaption>Baby look por R$ 45,99</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do segundo produto -->
-
-				<!-- terceiro produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura3.jpg" alt="miniatura3">
-							<figcaption>Manga longa por R$ 120,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do terceiro produto -->
-
-
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura4.jpg" alt="miniatura4">
-							<figcaption>Jaqueta por R$ 150,90</figcaption>
+							<img src="img/produtos/miniatura<?= $produto['id'] ?>.jpg"
+								alt="<?= $produto['nome'] ?>">
+							<figcaption>
+								<?= $produto['nome'] ?>
+								por
+								<?= $produto['preco'] ?>
+							</figcaption>
 						</figure>
 				</a></li>
 
-
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura5.jpg" alt="miniatura5">
-							<figcaption>Regata por R$ 19,90</figcaption>
-						</figure>
-				</a></li>
-
-
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura6.jpg" alt="miniatura6">
-							<figcaption>Regata por R$ 25,90</figcaption>
-						</figure>
-				</a></li>
-
+				<?php endwhile; ?>
 			</ol>
 
 			<button type="button">Mostrar mais</button>
-
 
 		</section>
 
 
 		<section class="painel mais-vendidos">
 			<h2>Mais Vendidos</h2>
+
 			<ol>
-				<!-- setimo produto -->
-				<li><a href="">
+				<?php
+    				 	$conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
+    					 $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 12");
+     					while ($produto = mysqli_fetch_array($dados)):?>
+
+				<li><a href="produto.php?id=<?= $produto['id'] ?>">
 						<figure>
-							<img src="img/produtos/miniatura7.jpg" alt="miniatura7">
-							<figcaption>Jaqueta por R$ 150,90</figcaption>
+							<img src="img/produtos/miniatura<?= $produto['id'] ?>.jpg"
+								alt="<?= $produto['nome'] ?>">
+							<figcaption>
+								<?= $produto['nome'] ?>
+								por
+								<?= $produto['preco'] ?>
+							</figcaption>
 						</figure>
 				</a></li>
 
-
-				<!--quinto produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura5.jpg" alt="miniatura5">
-							<figcaption>Regata por R$ 19,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do quinto produto -->
-
-
-				<!-- sexto produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura6.jpg" alt="miniatura6">
-							<figcaption>Regata por R$ 25,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do sexto produto -->
-
-
-
-				<!-- quarto produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura4.jpg" alt="miniatura4">
-							<figcaption>Jaqueta por R$ 150,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do quarto produto -->
-
-
-				<!--quinto produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura5.jpg" alt="miniatura5">
-							<figcaption>Regata por R$ 19,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do quinto produto -->
-
-
-				<!-- sexto produto -->
-				<li><a href="">
-						<figure>
-							<img src="img/produtos/miniatura6.jpg" alt="miniatura6">
-							<figcaption>Regata por R$ 25,90</figcaption>
-						</figure>
-				</a></li>
-				<!-- fim do sexto produto -->
-
+				<?php endwhile; ?>
 			</ol>
+
 			<button type="button">Mostrar mais</button>
 
 		</section>
 
 
 
-
-
-
 		<?php include("rodape.php"); ?>
-
-
 
 	</div>
 	<!-- fim .container .paineis -->

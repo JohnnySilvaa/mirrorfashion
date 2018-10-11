@@ -1,3 +1,9 @@
+<?php
+     $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
+     $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
+     $produto = mysqli_fetch_array($dados);
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +26,7 @@
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index.php"><img
-				src="img/logo-rodape.png" alt="Mirror Fashion"></a>
+				src="img/logo.jpg" alt="Mirror Fashion"></a>
 			<button class="navbar-toggle" type="button"
 				data-target=".navbar-collapse" data-toggle="collapse">
 				<span class="glyphicon glyphicon-align-justify"></span>
@@ -52,18 +58,18 @@
 					<div class="panel-heading">
 						<h2>Sua compra</h2>
 					</div>
+
 					<div class="panel-body">
-						<img src="img/produtos/foto2-<?=$_POST['cor']?>.png"
+						<img src="img/produtos/foto2-<?=$_POST['cor']?>.jpg"
 							class="img-thumbnail img-responsive hidden-xs">
 						<dl>
 							<dt>Produto</dt>
 							<dd>
-								<?= $_POST['nome'] ?>
+								<?= $produto['nome'] ?>
 							</dd>
-
 							<dt>Preço</dt>
 							<dd id="preco">
-								<?= $_POST['preco'] ?>
+								<?= $produto['preco'] ?>
 							</dd>
 
 							<dt>Cor</dt>
@@ -83,7 +89,7 @@
 						<div class="form-group">
 							<label for="total">Total</label>
 							<output for="qt valor" id="total" class="form-control">
-								<?= $_POST["preco"] ?>
+								<?= $produto['preco'] ?>
 							</output>
 						</div>
 					</div>
