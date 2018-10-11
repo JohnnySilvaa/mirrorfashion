@@ -1,8 +1,11 @@
 <?php
-     $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
-     $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
-     $produto = mysqli_fetch_array($dados);
- ?>
+     $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43"); 
+    $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]"); 
+    $produto = mysqli_fetch_array($dados); 
+ ?> 
+
+
+
 
 <!DOCTYPE html>
 <html>

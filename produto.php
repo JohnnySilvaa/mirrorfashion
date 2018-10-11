@@ -71,7 +71,16 @@
 				</form>
 			</div>
 
+			<div class="fb-like" data-href="http://www.mirrorfashion.net"
+				data-send="false" data-layout="box_count" data-width="58"
+				data-show-faces="false"></div>
+
+			<a href="https://twitter.com/share" class="twitter-share-button"
+				data-count="vertical">Tweet</a>
+
+			<div class="g-plusone" data-annotation="inline"></div>
 			<div class="detalhes">
+			
 				<h2>Detalhes do produto</h2>
 
 				<p>
@@ -110,10 +119,54 @@
 		</div>
 
 
+
 	</div>
 
 	<?php include("rodape.php"); ?>
 
 	<script type="text/javascript" src="js/produto.js"></script>
+
+	<div id="fb-root"></div>
+
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id))
+				return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "http://connect.facebook.net/pt_BR/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+	<script>
+		!function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "http://platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		}(document, "script", "twitter-wjs");
+	</script>
+
+
+	<script type="text/javascript">
+		window.___gcfg = {
+			lang : 'pt-BR'
+		};
+
+		(function() {
+			var po = document.createElement('script');
+			po.type = 'text/javascript';
+			po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(po, s);
+		})();
+	</script>
 </body>
 </html>
